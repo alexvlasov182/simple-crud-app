@@ -45,13 +45,7 @@ npm install
 3. Run the development server:
 
 ```
-npm run dev
-```
-
-4. Run in production:
-
-```
-npm start
+npm run dev or yarn dev
 ```
 
 ## Sample Endpoints
