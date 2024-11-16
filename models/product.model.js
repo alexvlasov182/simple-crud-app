@@ -5,25 +5,29 @@ const ProductSchema = mongoose.Schema(
     name: {
       type: String,
       required: [true, "Please enter product name"],
+      trim: true,
     },
 
-    quality: {
+    quantity: {
       type: Number,
       required: true,
       default: 0,
+      min: [0, "Quantity cannot be negative"],
     },
     price: {
       type: Number,
       required: true,
       default: 0,
+      min: [0, "Price cannot be negative"],
     },
     image: {
       type: String,
       required: false,
+      trim: true,
     },
   },
   {
-    timestamp: true,
+    timestamps: true,
   },
 );
 
