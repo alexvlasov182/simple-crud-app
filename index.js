@@ -1,4 +1,5 @@
 const express = require("express");
+require("dotenv").config();
 const mongoose = require("mongoose");
 const Product = require("./models/product.model");
 
@@ -52,9 +53,7 @@ app.put("/api/product/:id", async (req, res) => {
 });
 
 mongoose
-  .connect(
-    "mongodb+srv://drumlife182:cfg8VcXJCMUdAelA@backenddb.yhq3n.mongodb.net/Node-API?retryWrites=true&w=majority&appName=BackendDB",
-  )
+  .connect(process.env.MONGODB_URI)
   .then(() => {
     console.log("Connected to mongodb");
     app.listen(3000, () => {
