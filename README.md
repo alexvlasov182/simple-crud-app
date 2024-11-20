@@ -32,7 +32,7 @@ This repository contains a simple CRUD (Create, Read, Update, Delete) applicatio
 1. Clone this repository:
 
 ```
-git clone https://github.com/username/simple-crud-app.git
+git clone https://github.com/alexvlasov182/simple-crud-app.git
 cd simple-crud-app
 ```
 
